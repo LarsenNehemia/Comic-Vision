@@ -1,0 +1,270 @@
+*{
+   margin:0px;
+   padding:0px;
+   box-sizing: border-box;
+   font-family: "Ariel", sans-serif;
+}
+h1 {
+   font-size: 30pt;
+   font-weight: bold;
+   text-transform: capitalize;
+   color:  black;
+}
+
+header {
+   background-color: #333;
+   color:#fff;
+   padding:20px 60px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: sticky ;
+   top: 0;
+   z-index :100;
+}
+
+.logo{
+   font-size: 32px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+.logo a{
+   color:#fff;
+   text-decoration: none;
+}
+nav{
+   display: flex;
+   align-items: center;
+}
+nav ul{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+ nav ul li{
+   margin-left: 25px;
+   list-style:none;
+ }
+ nav ul li a{
+   color:#fff;
+   text-decoration: none;
+   font-size:19px;
+   font-weight: bold;
+   transition: 0.4s ease;
+ }
+nav ul li a:hover{
+   color:#666;
+}
+
+.search{
+   position: relative;
+}
+.search input{
+   padding:10px;
+   border:none;
+border-radius: 20px;
+background-color: #444;
+color: #fff;
+}
+
+.search button{
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 10px;
+   border:none;
+   border-radius: 20px;
+   background-color: #fff;
+   color: #444;
+   font-weight: bold;
+}
+
+.hero{
+   background-color:green;
+   padding:70px 60px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+}
+
+.hero h1{
+   font-size: 48px;
+   color:#fff;
+}
+
+.hero p{
+   font-size: 24px;
+   color:#fff;
+   margin-bottom: 30px;
+}
+
+.main-content{
+   background-color: #f9f9f9;
+   padding:40px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+.books{
+   display: grid;
+   grid-template-columns:repeat(3,1fr);
+   grid-gap: 40px;
+   margin-top: 40px;
+   
+}
+.book{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.book img{
+   max-width: 100%;
+   margin-bottom: 10px;
+}
+
+.book h3 {
+   font-size: 24px;
+   margin-top: 0px;
+}
+.book p{
+   margin-top: 5px;
+   color:black;
+}
+.btn{
+   display: inline-block;
+   padding: 12px 30px;
+   background-color:#333;
+   color:#fff;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: 0.04s ease;
+}
+.btn:hover{
+   background-color: #555;
+}
+footer{
+   background-color: #262626;
+   color:#fff;
+   padding:20 px;
+   text-align: center;
+}
+
+
+/* New styles within media query for mobile phones in portrait orientation */
+@media only screen and (max-width: 600px) {
+   header {
+     padding: 10px 20px;
+   }
+ 
+   .logo {
+     font-size: 24px;
+   }
+ 
+   nav ul {
+     flex-direction: column;
+   }
+ 
+   nav ul li {
+     margin: 10px 0;
+   }
+ 
+   .search input {
+     width: 70%;
+   }
+ 
+   .search button {
+     padding: 8px;
+   }
+ 
+   .hero {
+     padding: 50px 20px;
+   }
+ 
+   .hero h1 {
+     font-size: 36px;
+   }
+ 
+   .hero p {
+     font-size: 18px;
+   }
+ 
+   .main-content {
+     padding: 20px;
+   }
+ 
+   .books {
+     grid-template-columns: 1fr;
+     grid-gap: 20px;
+   }
+ 
+   .book {
+     margin-bottom: 20px;
+   }
+ 
+   .book h3 {
+     font-size: 20px;
+   }
+ 
+   .btn {
+     padding: 10px 20px;
+   }
+ 
+   footer {
+     padding: 10px;
+   }
+ }
+
+ /* Add this to your style.css file */
+ 
+ /* Hide the navigation menu items */
+ nav ul li {
+     display: none;
+ }
+ 
+ /* Show the hamburger menu icon */
+ nav ul li.hamburger {
+     display: block;
+     cursor: pointer;
+ }
+ 
+ /* Show the navigation menu items when the hamburger menu icon is clicked */
+ nav ul.responsive {
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: #f9f9f9;
+     display: block;
+     width: 100%;
+ }
+ 
+ nav ul.responsive li {
+     display: block;
+     text-align: left;
+ }
+ 
+ /* Media query for screens larger than 600px */
+ @media screen and (min-width: 600px) {
+     /* Hide the hamburger menu icon */
+     nav ul li.hamburger {
+         display: none;
+     }
+ 
+     /* Show the navigation menu items */
+     nav ul li {
+         display: inline-block;
+     }
+ }
+
+ /*COME BACK*/
+ .image-container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .image-container img {
+   width: 300px;
+   height: 200px;
+   margin: 10px;
+ }

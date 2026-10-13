@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic_Vision Contact Page</title>
+</head>
+<body>  
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <header>
+
+        
+        <nav>
+        <ul>
+            <img src ="_images/comic_vision.jpg.png" width = "100">
+            <li> <a href ="index.html"> Home </a></li>
+            <li> <a href= "about.html">About us</a></li>
+            <li> <a href= "Products.html">Products and services</a> </li>
+            <li> <a href= "news.html">News</a></li>
+            <li> Contact us</li> 
+        </ul>
+        </nav>
+
+    </nav>
+    <div class = "search">
+       <input type="text" placeholder="Search..">
+       <button type="submit">Search</button>
+    </div>
+    </header>
+
+    <div class = "hero">
+        <div class = "hero-content">
+            <h1> Contact Page </h1>
+            <p> Opening Hours:</p>
+            <p>Monday-Friday: 09:00 AM to 5 Pm </p>
+            <p> Satuday-Sunday 10:00 AM to 4pm </p>
+            <p> Public holidays may differ </p>
+            <p> Feel free to contact us down below and insert your email address as well as what you woud like to ask us. </p>
+   <h3> <div id="dateTime"></div> </h3> 
+        </div>
+        <div class ="main-content">
+            <h2>Here is a look at our location</h2>
+            <div class = "boooks"> 
+            <div class = "book">
+              <iframe src="https://www.google.com/maps/embed?pb=!4v1711547481252!6m8!1m7!1sCAoSLEFGMVFpcE9iNk5Nc2pYdHdCSFNPbnZITE5wbUxyeERVMWxjTlJnQWNmV1NT!2m2!1d-26.0189625!2d28.0064136!3f107.90469110493945!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <p> We are located in fourways mall, feel free to come visit anytime and get a great look at the books we have to offer.</p>
+            </div>
+            <section id="contact-form">
+                <h2>Contact Us</h2>
+                <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" value="Your Name" onclick="this.value=''">
+              
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" value="Your Email" onclick="this.value=''">
+              
+                  <label for="subject">Subject:</label>
+                  <input type="text" id="subject" name="subject" value="Subject" onclick="this.value=''">
+              
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" onclick="this.value=''">Your Message</textarea>
+              
+                  <input type="submit" value="Submit">
+                </form>
+              </section>
+    </div>
+    </div>
+    
+
+    <a href="products.html" class = "btn"> View All Books</a>
+
+
+    <footer>
+        <p> &copy; Comic Vision 2024</p>
+    </footer>
+
+</body>
+</html>
+
